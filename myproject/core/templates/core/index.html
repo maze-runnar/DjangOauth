@@ -1,0 +1,22 @@
+
+{% block content %}
+    <h2>WowBadge</h2>
+    <p>easiest way to create badges</p>
+    {{name}}
+    <br/>    {{branch}}
+    <br/>
+    {% for i in subjects %}
+        <ul>
+            <li>
+                {{i}}
+            </li>
+        </ul>
+    {% endfor %}
+    {% for i in l %}
+        {{i}}
+    {% endfor %}
+
+
+
+
+{% endblock %}

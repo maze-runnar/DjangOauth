@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "views"
+    ],
+    "cSpell.ignoreWords": [
+        "core"
+    ],
+    "python.pythonPath": "/usr/bin/python3.7",
+    "python.formatting.provider": "black"
+}

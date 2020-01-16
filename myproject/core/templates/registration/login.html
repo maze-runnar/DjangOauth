@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+{% block content %}
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+  <br>
+  <p><strong>-- OR --</strong></p>
+
+  <a href="{% url 'social:begin' 'github' %}"  > <i class="fa fa-github" style = "color:black"></i>Login with Github</a><br>
+  <a href="{% url 'social:begin' 'twitter' %}"><i class="fa fa-twitter" style = "color:blue"></i>Login with Twitter</a><br/>
+  <a href="{% url 'social:begin' 'facebook' %}"><i class="fa fa-facebook" style = "color:blue"></i>Login with Facebook</a><br>
+  <a href="{% url 'social:begin' 'google-oauth2' %}"><i class="fa fa-google" style = "color:red"></i>Login with Google</a>
+{% endblock %}
+
